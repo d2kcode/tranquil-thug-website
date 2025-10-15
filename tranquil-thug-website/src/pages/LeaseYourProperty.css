@@ -1,0 +1,256 @@
+.lease-your-property {
+  min-height: 100vh;
+}
+
+.urgent-alert-banner {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(220, 53, 69, 0.3);
+}
+
+.alert-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.alert-icon {
+  font-size: 1.2rem;
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0%, 50% { opacity: 1; }
+  25%, 75% { opacity: 0.5; }
+}
+
+.alert-text {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.alert-timer {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-family: monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.lease-hero {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #2c5530, #3d7c47);
+  color: white;
+  text-align: center;
+}
+
+.urgency-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.live-indicator {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+}
+
+.lease-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+  opacity: 0.95;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #2c5530;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.real-social-proof {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  max-width: 600px;
+  margin: 3rem auto;
+}
+
+.proof-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.proof-stat {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffd700;
+}
+
+.proof-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.application-form-section {
+  padding: 4rem 0;
+  background: #f8fdf8;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.form-header h2 {
+  font-size: 2.5rem;
+  color: #2c5530;
+  margin-bottom: 1rem;
+}
+
+.form-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.lease-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+  margin-bottom: 3rem;
+}
+
+.form-section h3 {
+  font-size: 1.6rem;
+  color: #2c5530;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(44, 85, 48, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2c5530;
+  box-shadow: 0 0 0 3px rgba(44, 85, 48, 0.1);
+}
+
+.form-submit {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.submit-urgency {
+  margin-bottom: 2rem;
+}
+
+.urgency-text {
+  color: #dc3545;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.timer-text {
+  color: #666;
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+.submit-guarantees {
+  margin-top: 2rem;
+  background: rgba(40, 167, 69, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #28a745;
+}
+
+.submit-guarantees p {
+  color: #28a745;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .lease-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .urgency-indicators {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .real-social-proof {
+    grid-template-columns: 1fr;
+  }
+  
+  .lease-form {
+    padding: 2rem;
+    margin: 0 1rem;
+  }
+  
+  .alert-content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .alert-text {
+    font-size: 1rem;
+  }
+}
